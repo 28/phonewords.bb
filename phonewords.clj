@@ -6,16 +6,16 @@
 ;; Usage:
 
 ;; To generate all combinations that contain any (common) English words:
-;; echo 43556 | bb -o .\phonewords.clj
+;; echo 43556 | bb -o phonewords.clj
 
 ;; To generate combinations that contain exact words:
-;; echo 43556 | bb -o .\phonewords.clj
+;; echo 43556 | bb -o phonewords.clj
 ;;
 ;; Generate all combinations from numbers in a file:
 ;; cat numbers.txt | bb -o phonewords.clj -s
 
 ;; The script can take a specific EDN dictionary file:
-;; echo 937286 | bb -o .\phonewords.clj -d special-dictionary.edn
+;; echo 937286 | bb -o phonewords.clj -d special-dictionary.edn
 
 ;; Copyright (c) 2023 Dejan Josifović, the paranoid times
 

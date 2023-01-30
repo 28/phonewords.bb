@@ -8,14 +8,14 @@ A small [babashka](https://babashka.org/) script for generating
 To generate all combinations that contain any (common) English words:
 
 ``` shell
-echo 43556 | bb -o .\phonewords.clj
+echo 43556 | bb -o phonewords.clj
 (HELLM HELLN HELLO)
 ```
 
 To generate combinations that contain exact words:
 
 ``` shell
-echo 43556 | bb -o .\phonewords.clj
+echo 43556 | bb -o phonewords.clj
 (HELLO)
 ```
 
@@ -31,13 +31,13 @@ cat numbers.txt | bb -o phonewords.clj -s
 The script can take a specific EDN dictionary file:
 
 ``` shell
-echo 937286 | bb -o .\phonewords.clj -d special-dictionary.edn
+echo 937286 | bb -o phonewords.clj -d special-dictionary.edn
 (ZDRAVO)
 ```
 
 ## License
 
-Copyright (c) 2023 Dejan Josifovic, the paranoid times
+Copyright (c) 2023 Dejan Josifović, the paranoid times
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the "Software"),
